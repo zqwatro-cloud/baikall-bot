@@ -9,7 +9,6 @@ import time
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, LabeledPrice, InputFile
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes, PreCheckoutQueryHandler
 from supabase import create_client, Client
-from supabase.lib.client_options import ClientOptions
 
 # ========== КОНФИГ ==========
 BOT_TOKEN = "8913797082:AAE-AJSs1GyJ6JzMojYiVxrOiNUJXAiYo-k"
@@ -22,13 +21,7 @@ TON_WALLET = "UQBZtQCKRxk6UnEA_8G8sA99J3JxhA6F-ODCM5aLdAfdECfC"
 SUPABASE_URL = "https://ckjfruhisdnmfulkcjrz.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNramZydWhpc2RubWZ1bGtjanJ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg5NzgzNTIsImV4cCI6MjEwNDU1NDM1Mn0.2071Yig1Gk_CFUEwt1vTNcUyZxQE_F74q0u44Lpdkdc"
 
-options = ClientOptions(
-    postgrest_client_timeout=10,
-    storage_client_timeout=10,
-    realtime_client_timeout=10
-)
-
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY, options=options)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ========== ПРЕМИУМ ЭМОДЗИ ==========
 EMOJI_WELCOME = '<tg-emoji emoji-id="5343833386681148365">👋</tg-emoji>'
