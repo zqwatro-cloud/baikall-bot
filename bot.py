@@ -11,7 +11,7 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Mess
 from supabase import create_client, Client
 
 # ========== КОНФИГ ==========
-BOT_TOKEN = "8752748803:AAFjS-NPp5Tard5EORpZm0u-eZYxHstIswI"
+BOT_TOKEN "8913797082:AAE-AJSs1GyJ6JzMojYiVxrOiNUJXAiYo-k"
 ADMIN_ID = 8736990603
 PROVIDER_TOKEN = ""
 PHOTO_PATH = "photo.jpg"
