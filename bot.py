@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 # ========== КОНФИГ ==========
 load_dotenv()
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8913797082:AAE-AJSs1GyJ6JzMojYiVxrOiNUJXAiYo-k")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8752748803:AAFjS-NPp5Tard5EORpZm0u-eZYxHstIswI")
 ADMIN_ID = 8919925477
 PROVIDER_TOKEN = ""
 PHOTO_URL = "https://files.catbox.moe/7t9fe7.png"
